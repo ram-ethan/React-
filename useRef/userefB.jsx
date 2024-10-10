@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   const [time, setTime] = useState(0);
-  const timeRef = useRef(null);
+  const timeRef = useRef(null); // here we will initiallize the timeRef to the return value from setinterval as it will perssit to not to get change 
 
   function handleStart() {
     timeRef.current = setInterval(() => {
